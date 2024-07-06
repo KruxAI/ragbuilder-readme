@@ -49,7 +49,7 @@ Now, run ragbuilder on your command line:
 ragbuilder
 ```
 
-This will start the Ragbuilder Flask app and open the browser. If the browser window doesn't open automatically, go to http://localhost:8001/ in your browser to access the RagBuilder dashboard.
+This will start the Ragbuilder Flask app and open the browser. If the browser window doesn't open automatically, go to http://localhost:8005/ in your browser to access the RagBuilder dashboard.
 
 1. Click **New Project** to start building your RAG.
 2. **Description:** Describe your use-case. Let's specify "Q&A Chatbot" as the description for our demo.
