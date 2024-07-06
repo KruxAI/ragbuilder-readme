@@ -63,14 +63,17 @@ This will start the Ragbuilder Flask app and open the browser. If the browser wi
     - Retriever: Vector DB - Similarity Search
     - Top k: 5
     - LLM: GPT-3.5 Turbo
-6. Next, in Evaluation dataset options, you have the option to:
+6. Select combination to run
+    - __Bayesian optimization(recommended):__ Bayesian optimization is a strategy for the optimization of objective functions that are expensive to evaluate. It is particularly useful in scenarios where the function to be optimized is unknown and expensive to compute, such as in hyperparameter tuning for machine learning models or optimizing engineering designs.
+    - Run all Combinations: This option runs all possible combinations of the options selected. This option is appropriate is user has selected fewer number of options.  
+8. Next, in Evaluation dataset options, you have the option to:
     - **Use Existing Synthetic Test Data:** If synthetic test data was previously generated for your dataset, this option will appear alongside the path of the existing test data.
     - **Generate Synthetic Test Data from My Dataset:** Create a new synthetic test dataset based on your existing data.
     - **Provide a Manually Created Test Dataset:** Use your own test dataset file (CSV format with "question" and "ground_truth" columns).
     For our demo, let's go ahead and create a synthetic test data by selecting the **Generate Synthetic Test Data**** option.
-7. Before running the tool, let's review all your selections:
-8. Review all the selections and click **Confirm**
-9. After processing we should see the dashboard with the results.
+9. Before running the tool, let's review all your selections:
+10. Review all the selections and click **Confirm**
+11. After processing we should see the dashboard with the results.
 
 # Environment Variables Setup for RagBuilder
 
