@@ -27,7 +27,7 @@ RagBuilder is a toolkit designed to help you create optimal Production-ready Ret
 pip install ragbuilder
 ```
 
-## Set your OpenAI API key
+#### Set your OpenAI API key
 
 Make sure your OpenAI API key is available by setting it as an environment variable. In MacOS and Linux, this is the command:
 
@@ -119,7 +119,7 @@ The environment variables are essential for authenticating and configuring vario
 
 ### Example `.env` File
 
-Create a file named `.env` in the directory where you will run the `ragbuilder` command and add the following content, replacing the placeholder values with your actual keys and connection string:
+Create a file named `.env` in the directory where you will run the `ragbuilder` command and add the following content, replacing the placeholder values with your actual keys and connection string. Ensure not to use quoutes for keys or values
 
 ```env
 # Environment variables for the RagBuilder project
