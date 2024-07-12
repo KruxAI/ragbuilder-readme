@@ -21,7 +21,7 @@ RagBuilder is a toolkit designed to help you create optimal Production-ready Ret
 
 ## Installation
 
-Install using pip:
+### Option 1: Install using pip:
 
 ```
 pip install ragbuilder
@@ -40,6 +40,28 @@ and on Windows it is
 ```
 set OPENAI_API_KEY=XXXXX
 ```
+
+### Option 2: Using Prebuilt Docker Image
+
+Pull docker image from Docker hub
+```
+docker pull ashwinzyx/ragbuilder:latest
+```
+
+Run the Docker Container.
+Create .env as below and use it while running the container
+```
+docker run --env-file .env -p 55003:8005 ragbuilder
+```
+
+OR
+
+Provide env variables using command line
+```
+docker run  -p 55002:8005  -e OPENAI_API_KEY=sk-....
+```
+
+Open Ragbuilder [http://localhost:55003/](http://localhost:55003/)
 
 ## Quickstart Guide
 
@@ -101,14 +123,14 @@ Create a file named `.env` in the directory where you will run the `ragbuilder` 
 
 ```env
 # Environment variables for the RagBuilder project
-OPENAI_API_KEY="XXXXXX"
-MISTRAL_API_KEY="XXXXX" 
-ENABLE_ANALYTICS="True"
-HUGGINGFACEHUB_API_TOKEN="XXXXXX"
-COHERE_API_KEY="XXXXXX"
-JINA_API_KEY="XXXXXX"
-SINGLESTOREDB_URL="userid:password@host:port/dbname"
-PINECONE_API_KEY="XXXXXX"
+OPENAI_API_KEY=XXXXXX
+MISTRAL_API_KEY=XXXXX
+ENABLE_ANALYTICS=True
+HUGGINGFACEHUB_API_TOKEN=XXXXXX
+COHERE_API_KEY=XXXXXX
+JINA_API_KEY=XXXXXX
+SINGLESTOREDB_URL=userid:password@host:port/dbname
+PINECONE_API_KEY=XXXXXX
 ```
 
 ### Instructions
