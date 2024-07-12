@@ -58,7 +58,7 @@ OR
 
 Provide env variables using command line
 ```
-docker run  -p 55002:8005  -e OPENAI_API_KEY=sk-....
+docker run  -p 55003:8005  -e OPENAI_API_KEY=sk-....
 ```
 
 Open Ragbuilder [http://localhost:55003/](http://localhost:55003/)
