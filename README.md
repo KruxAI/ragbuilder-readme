@@ -50,13 +50,12 @@ docker pull ashwinzyx/ragbuilder:latest
 
 Run the Docker Container.
 Create .env as below and use it while running the container. The env file must be in the same directory where the docker command is being run
-Mac
+#### Mac
 ```
 docker run -it -v "$(pwd):/ragbuilder" --env-file .env -p 55003:8005 ragbuilder 
 ```
-Windows
+#### Windows
 docker run -d -v %cd%:/ragbuilder --env-file .env -p 55003:8005 ragbuilder
- 
 
 OR
 
@@ -66,6 +65,8 @@ docker run  -p 55003:8005  -e OPENAI_API_KEY=sk-....
 ```
 
 Open Ragbuilder [http://localhost:55003/](http://localhost:55003/)
+
+If you are crearting your own synthetic dataset for evaluation, save the csv file in the same directory where the docker run command is being executed and provide the file name only
 
 ## Quickstart Guide
 
