@@ -1,8 +1,4 @@
 # Brewfile
-
-# Taps
-tap "homebrew/core"
-
 # Core libraries
 brew "ca-certificates"
 brew "cairo"
