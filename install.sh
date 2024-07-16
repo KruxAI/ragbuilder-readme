@@ -31,3 +31,5 @@ echo "Installing ragbuilder..."
 python3 -m pip install ragbuilder
 
 echo "Setup completed successfully."
+source $VENV_PATH/bin/activate
+
