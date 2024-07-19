@@ -52,7 +52,7 @@ Run the Docker Container.
 Create .env as below and use it while running the container. The env file must be in the same directory where the docker command is being run
 #### Mac
 ```
-docker run -it -v "$(pwd):/ragbuilder" --env-file .env -p 55003:8005 ashwinzyx/ragbuilder 
+docker run -it -v "$(pwd):/ragbuilder" --env-file .env -p 55003:8005 ashwinzyx/ragbuilder:latest
 ```
 #### Windows
 ```
