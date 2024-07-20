@@ -34,7 +34,8 @@ curl -fsSL https://raw.githubusercontent.com/KruxAI/ragbuilder-readme/main/insta
 ```
 
 Run Install.bat from command prompt
-```install.bat
+```
+install.bat
 ```
 
 
