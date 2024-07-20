@@ -1,5 +1,3 @@
-# Brewfile
-# Core libraries
 brew "ca-certificates"
 brew "cairo"
 brew "fontconfig"
