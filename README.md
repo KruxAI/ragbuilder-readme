@@ -21,11 +21,23 @@ RagBuilder is a toolkit designed to help you create optimal Production-ready Ret
 
 ## Installation
 
-### Option 1: Install using pip:
+### Option 1: Install using install script:
+#### Mac
 
 ```
-pip install ragbuilder
+curl -fsSL https://raw.githubusercontent.com/KruxAI/ragbuilder-readme/main/install.sh |bash
 ```
+
+#### Windows
+```
+curl -fsSL https://raw.githubusercontent.com/KruxAI/ragbuilder-readme/main/install.bat
+```
+
+Run Install.bat from command prompt
+```install.bat
+```
+
+
 
 #### Set your OpenAI API key
 
