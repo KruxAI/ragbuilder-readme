@@ -1,0 +1,99 @@
+site_name: RagBuilder Docs
+site_url: https://docs.ragbuilder.io
+nav:
+    - Introduction: index.md
+    - Getting started: quickstart.md
+    - Environment Setup: env.md
+    - FAQ: faq.md
+    - License: license.md
+    - Contributing: contributing.md
+    - Code of Conduct: code_of_conduct.md
+    - Changelog: changelog.md
+
+theme:
+  name: material
+  logo: assets/images/logo.png
+  favicon: assets/images/logo3.png
+  features:
+    - navigation.tabs
+    - navigation.footer
+    - navigation.path
+    - navigation.instant
+    - navigation.instant.preview
+    - search.suggest
+    - toc.integrate
+  
+  # For FAQ page - collapsible Q&A using admonition
+  icon:
+    admonition:
+      quote: material/star-four-points-small
+  
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: black
+      toggle:
+        icon: material/toggle-switch 
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+extra:
+  version:
+    provider: mike
+    alias: true
+  generator: false
+
+plugins:
+  - search
+  - mike:
+      # These fields are all optional; the defaults are as below...
+      alias_type: symlink
+      redirect_template: null
+      deploy_prefix: ''
+      canonical_version: null
+      version_selector: true
+      css_dir: css
+      javascript_dir: js
+
+markdown_extensions:
+
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+
+  # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+copyright: Copyright &copy; 2024 Krux AI
